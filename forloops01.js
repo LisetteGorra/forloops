@@ -15,17 +15,17 @@ for (var i = 0; i < roomTypes.length; i++) {
 console.log(bookedRooms);
 
 function bookSingle() {
-    bookedRooms[0].push(availRooms[0].pop());
+    bookedRooms[0].sort(bookedRooms[0].push(availRooms[0].pop()));
 }
 function bookDouble() {
-    bookedRooms[1].push(availRooms[1].pop());
+    bookedRooms[0].sort(bookedRooms[1].push(availRooms[1].pop()));
 }
 function bookQueen() {
-    bookedRooms[1].push(availRooms[2].pop());
+    bookedRooms[0].sort(bookedRooms[2].push(availRooms[2].pop()));
 }
 function bookKing() {
-    availRooms[3].pop();
+    bookedRooms[0].sort(bookedRooms[3].push(availRooms[3].pop()));
 }
 function bookMechanical() {
-    availRooms[4].pop();
+    bookedRooms[0].sort(bookedRooms[4].push(availRooms[4].pop()));
 }
