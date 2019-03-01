@@ -18,7 +18,7 @@ function bookSingle() {
     bookedRooms[0].sort(bookedRooms[0].push(availRooms[0].pop()));
 }
 function bookDouble() {
-    bookedRooms[0].sort(bookedRooms[1].push(availRooms[1].pop()));
+    bookedRooms[1].sort(bookedRooms[1].push(availRooms[1].pop()));
 }
 function bookQueen() {
     bookedRooms[0].sort(bookedRooms[2].push(availRooms[2].pop()));
@@ -28,4 +28,16 @@ function bookKing() {
 }
 function bookMechanical() {
     bookedRooms[0].sort(bookedRooms[4].push(availRooms[4].pop()));
+}
+
+function salesReport() {
+var totalSales = 0;
+
+for (var i = 0; i < bookedRooms.length; i++) {
+    totalSales += bookedRooms[i].length * roomPrices[i]
+       
+      
+    }
+    return totalSales;
+
 }
